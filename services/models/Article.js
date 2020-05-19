@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, Image, Dimensions } from 'react-native'
 
 const { width, height } = Dimensions.get('window')
 
-export default function Article( {item }) {
+export default function Article({ item }) {
     console.log(item)
     return (
         <View style={styles.cardView}>

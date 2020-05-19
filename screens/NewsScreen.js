@@ -8,10 +8,10 @@ export default function News() {
     const [news, setNews] = useState([]);
 
     useEffect(() => {
-        getNewsFromAPI()
+        getNewsFromApi()
     }, [])
 
-    function getNewsFromAPI() {
+    function getNewsFromApi() {
         newApi.get('everything?q=bitcoin&apiKey=8c66ce1dfb9245cf9fe9be0a484d713e')
             .then(async function (response) {
                 setNews(response.data);

@@ -18,7 +18,7 @@ export default function BottomTabNavigator({ navigation, route }) {
   return (
     <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
       <BottomTab.Screen
-        name="Home"
+        name="Sources"
         component={HomeScreen}
         options={{
           title: 'Get Started',
@@ -49,7 +49,7 @@ function getHeaderTitle(route) {
   const routeName = route.state?.routes[route.state.index]?.name ?? INITIAL_ROUTE_NAME;
 
   switch (routeName) {
-    case 'Home':
+    case 'Sources':
       return 'How to get started';
     case 'Links':
       return 'Links to learn more';
